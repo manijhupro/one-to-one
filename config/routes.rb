@@ -1,9 +1,10 @@
 OnetooneStatic::Application.routes.draw do
-  get "static_pages/home"
-  get "static_pages/onetoone"
-  get "static_pages/onclick"
-  get "static_pages/help"
-  get "static_pages/singup"
+  root to: "static_pages#home"
+  get "/onetoone", to: "static_pages#onetoone"
+  get "/onclick", to: "static_pages#onclick"
+  get "/help", to: "static_pages#help"
+  get "/signup", to: "static_pages#signup"
+  get "/styleswitcher", to: "static_pages#styleswitcher"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -6,7 +6,7 @@ var	$googlemap_latitude 	= -37.812344,
 
 /* Init */
 
-jQuery(window).ready(function () {
+$(document).ready(function () {
     if(jQuery("#gmap").length > 0) {
         showMap('contactMap');
     }
