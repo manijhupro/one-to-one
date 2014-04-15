@@ -1,5 +1,5 @@
-var	$googlemap_latitude 	= -37.812344,
-    $googlemap_longitude	= 144.968900,
+var	$googlemap_latitude 	= 71.856229,
+    $googlemap_longitude	= -84.78149,
     $googlemap_zoom			= 13;
 
 
@@ -8,6 +8,7 @@ var	$googlemap_latitude 	= -37.812344,
 
 $(document).ready(function () {
     if(jQuery("#gmap").length > 0) {
+
         showMap('contactMap');
     }
 });

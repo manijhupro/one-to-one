@@ -22,6 +22,20 @@
   height:450px;
   display:block;
 }
+// login
+#container {
+  z-index: 100;
+  margin-right:0px;
+  position:fixed;
+  right:0;
+  top:20px;
+  font-size:16px;
+  border-radius: 0 5px 5px 0;
+  display: block;
+  padding: 1px 16px 10px 14px;
+  cursor: pointer;
+
+}
 
 //arrow switcher
 
@@ -39,6 +53,7 @@
   box-shadow: 0px 0px 4px 0px rgba(51, 51, 51, 0.2);
 
 }
+
 
 #switcher label {
   padding-right:20px;
@@ -102,10 +117,10 @@
   color:#999;
   position:absolute;
   background-color:#fff;
-  width:40px;
-  height:40px;
+  width:30px;
+  height:30px;
   top:7px;
-  right:16px;
+  right:12px;
   text-align:right;
   -webkit-border-bottom-right-radius: 3px;
   -webkit-border-top-right-radius: 4px;
@@ -158,4 +173,24 @@
 }
 #switcher .switcher_thumb.selected {
   box-shadow:#666 0 0 5px;;
+}
+/*style switcher image*/
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.0.3');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa-angle-double-right:before {
+  content: "\f101";
 }
