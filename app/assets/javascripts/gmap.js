@@ -1,5 +1,5 @@
-var	$googlemap_latitude 	= 71.856229,
-    $googlemap_longitude	= -84.78149,
+var	$googlemap_latitude 	= 79.856229,
+    $googlemap_longitude	= -44.78149,
     $googlemap_zoom			= 13;
 
 
@@ -53,7 +53,7 @@ function contactMap() {
 function showMap(initWhat) {
     var script 		= document.createElement('script');
     script.type 	= 'text/javascript';
-    script.src 		= 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true&callback='+initWhat;
+     script.src 		= 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true&callback='+initWhat;
     document.body.appendChild(script);
 }
 
