@@ -15,39 +15,48 @@
 <!--#Google Map-->
 
 <div id="gmap"><!-- google maps --></div>
-<div id="container" style="width:1300px">
+<div id="login" style="width:1300px">
     <div id="id" align="right">
         <a href="#" onclick="confirminput()"><b>LOGIN/SignUp</b></a>
     </div>
 
     <div id="log" align="center" style="display:none;background-color:white;height:500px;width:300px;float:right;">
+        <p class="alert alert-danger">Login/Sing up</p>
+        <p>Welcome Back !</p>
 
-    <h4><b> Pledge Information</b></h4>
-    <form>
-    <p> Name       <input type="text"  name="name" value=""></p>
+        <form  action="/users/sign_in" class="new_user" id="new_user" method="post">
 
-    <p> Suggestions <input  type="text" name="suggestions"></p>
+            <div align="left"><label for="user_email">Email</label></div>
+                <input autofocus="autofocus" id="user_email" name="user[email]" size="30" type="email" value="" />
 
-    <p> Impact      <input  type="text" name="impact"></p>
+            <div align="left"><label for="user_password">Password</label></div>
 
-    <p> Visuals     <input  type="text" name="visuals"></p>
-    <p> Followers   <input  type="text" name="followers"></p>
-    <br>
+            <input autocomplete="off" id="user_password" name="user[password]" size="30" type="password" /></br>
+            <div><input name="user[remember_me]" type="hidden" value="0" />
+                <input id="user_remember_me" name="user[remember_me]" type="checkbox" value="1" />
+                <label for="user_remember_me">Remember me</label></div>
 
-      <input  type="SUBMIT" name="" value="Comment">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+            <div>
+                <input name="commit" type="submit" value="Sign in" />
+                <a href="/users/password/new">Forgot your password?</a><br />
+            </div>
+            <br>
+            <br>
+        </form>
+        <hr style="-moz-box-shadow: 3px">
+        <p>Don't have an account </p>
+        <form>
+            <div align="left"><label for="user_email">Email</label></div>
+            <input autofocus="autofocus" id="user_email" name="user[email]" size="30" type="email" value="" />
+            <br>
+            <br>
+            <div><input name="commit" type="submit" value="Sign up" /></div>
 
-     Or <a href="#" onclick="confirminput()">SingUp</a> here...
-    </form>
-       </div>
 
+        </form>
+        </div>
 
 </div>
-<!--#Style Switcher-->
 <div id="switcher" style="margin-left: -500px; display: none; ">
 
     <div class="content-switcher" style="height: 400;width: 300 ">

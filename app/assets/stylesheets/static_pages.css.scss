@@ -24,7 +24,7 @@
 }
 
 // login
-#container {
+#login {
 
   z-index: 100;
   margin-right:0px;
@@ -34,10 +34,17 @@
   border-radius: 0 5px 5px 0;
   font-size:16px;
   border-radius: 0 5px 5px 0;
+  border-bottom-color:#ff0000 ;
   display: block;
   padding: 1px 16px 10px 14px;
   cursor: pointer;
-  border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-bottomleft: 3px;
+  -moz-border-radius-topleft: 4px;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 4px;
+
 
 }
 
