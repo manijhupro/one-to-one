@@ -17,7 +17,7 @@
 <div id="gmap"><!-- google maps --></div>
 <div id="login" style="width:1300px">
     <div id="id" align="right">
-        <a href="#" onclick="confirminput()"><b>LOGIN/SignUp</b></a>
+        <a href="#" onclick="confirminput()"> <%= link_to image_tag("login.gif",angle:"44",height:"30", width:"40",alt: "rails"), 'home.html' %></a>
     </div>
 
     <div id="log" align="center" style="display:none;background-color:white;height:500px;width:300px;float:right;">
@@ -60,9 +60,15 @@
 <div id="switcher" style="margin-left: -500px; display: none; ">
 
     <div class="content-switcher" style="height: 400;width: 300 ">
-        <h4>Menu Information</h4>
+        <h4>Menu</h4>
+        <%= link_to image_tag("logo.png",height:"30", width:"40",alt: "rails"), 'home.html' %>
+        <p><a href="">Logo</a></p>
+        <%= link_to image_tag("home.jpg",height:"30", width:"40",alt: "rails"), 'home.html' %>
         <p><a href="">Home</a></p>
-        <p><a href="">Profile</a></p>
+        <%= link_to image_tag("about.png",height:"30", width:"40",alt: "rails"), 'home.html' %>
+        <p><a href="">About</a></p>
+        <%= link_to image_tag("mail.png",height:"30", width:"40",alt: "rails"), 'home.html' %>
+        <p><a href="">Mail</a></p>
         <p><a href="">Contact</a></p>
         <p><a href="/" rel="address:/" address="true">Map of Photos</a></p>
        <p> <a id="nav-event-photos" href="/event-photos" rel="address:/event-photos" address="true" class="">Event Photos</a></p>
