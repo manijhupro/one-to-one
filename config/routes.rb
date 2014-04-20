@@ -1,6 +1,6 @@
 OnetooneStatic::Application.routes.draw do
   root to: "static_pages#onetoone"
- # get "/onetoone", to: "static_pages#onetoone"
+  #get "/onetoone", to: "static_pages#onetoone"
   get "/onclick", to: "static_pages#onclick"
   get "/help", to: "static_pages#help"
   get "/signup", to: "static_pages#signup"
