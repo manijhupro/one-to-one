@@ -31,7 +31,7 @@
         <form  action="/users/sign_in" class="new_user" id="new_user" method="post">
 
             <div align="left"><label for="user_email">Email</label></div>
-                <input autofocus="autofocus" id="user_email" name="user[email]" size="30" type="email" value="" />
+            <input autofocus="autofocus" id="user_email" name="user[email]" size="30" type="email" value="" />
 
             <div align="left"><label for="user_password">Password</label></div>
 
@@ -58,46 +58,58 @@
 
 
         </form>
-        </div>
+    </div>
 
 </div>
 <div id="switcher" style="margin-left: -500px; display: none; ">
 
     <div class="content-switcher" style="height: 400;width: 300 ">
         <h4>Menu</h4>
-        <%= link_to image_tag("logo.jpg",height:"40", width:"50",alt: "rails"), 'home.html' %>
+
+        <%= link_to image_tag("logo.jpg",height:"40", width:"40",alt:"rails"), 'home.html' %>
         <a href="">Logo</a>
         <p>
-        <%= link_to image_tag("home.jpg",height:"40", width:"40",alt: "rails"), 'home.html' %>
-        <a href="">Home</a>
-            </p>
-        <p>
-        <%= link_to image_tag("about.png",height:"40", width:"40",alt: "rails"), 'home.html' %>
-        <a href="">About</a>
-            </p>
-        <p>
-        <%= link_to image_tag("book.jpg",height:"40", width:"40",alt: "rails"), 'home.html' %>
-        <a href="">Education</a>
+            <%= link_to image_tag("home.jpg",height:"40", width:"40",alt:"rails"), 'home.html' %>
+            <a href="">Home</a>
         </p>
         <p>
-        <%= link_to image_tag("group.jpg",height:"40", width:"40",alt: "rails"), 'home.html' %>
-        <a href="">Compaigns</a>
+            <%= link_to image_tag("about.png",height:"40", width:"40",alt:"rails"), 'home.html' %>
+            <a href="">About</a>
         </p>
         <p>
-        <%= link_to image_tag("support.jpg",height:"40", width:"40",alt: "rails"), 'home.html' %>
-        <a href="">Support</a>
+            <%= link_to image_tag("book.jpg",height:"40", width:"40",alt:"rails"), 'home.html' %>
+            <a href="">Education</a>
         </p>
         <p>
-        <%= link_to image_tag("mail.png",height:"40", width:"40",alt: "rails"), 'home.html' %>
-        <a href="">Contact</a>
+            <%= link_to image_tag("group.jpg",height:"40", width:"40",alt:"rails"), 'home.html' %>
+            <a href="">Compaigns</a>
+        </p>
+        <p>
+           <%= link_to image_tag("support.jpg",height:"40", width:"40",alt:"rails"), 'home.html' %>
+            <a href="">Support</a>
+        </p>
+        <p>
+            <%= link_to image_tag("mail.png",height:"40", width:"40",alt: "rails"), 'home.html' %>
+            <a href="">Contact</a>
 
-         <div id="hideSwitcher">×</div>
+
+
+        <div class="span12">
+            <ul class="ft-iconlist">
+                <li><a href="https://plus.google.com/+inmotionhosting/posts"><img src="//imh01.inmotionhosting1.netdna-cdn.com/img/icon-google.png" alt="InMotion Hosting on Google+"></a></li>
+                <li><a href="https://twitter.com/inmotionhosting"><img src="//imh01.inmotionhosting1.netdna-cdn.com/img/icon-twitter.png" alt="InMotion Hosting on Twitter"></a></li>
+                <li><a href="https://www.facebook.com/inmotionhosting"><img src="//imh01.inmotionhosting1.netdna-cdn.com/img/icon-facebook.png" alt="InMotion Hosting on Facebook"></a></li>
+                  </ul>
+        </div>
+
+
+        <div id="hideSwitcher">×</div>
     </div>
 </div>
 <div id="showSwitcher" class="styleSecondColor"><i class="fa fa-angle-double-right"></i></div>
 
 
 
-    </div>
+</div>
 
 </div>
