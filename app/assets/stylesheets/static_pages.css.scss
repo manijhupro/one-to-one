@@ -1,12 +1,14 @@
-html, body, .container-fluid, .row, .col-md-11{
-  height:100%;
-}
+//html, body, .container-fluid, .row, .col-md-11{
+// height:100%;
+//}
 
 /* make sidebar nav vertical */
 @media (min-width: 768px) {
   .sidebar-nav .navbar .navbar-collapse {
     padding: 0;
     max-height: none;
+ z-index: 100
+
   }
   .sidebar-nav .navbar ul {
     float: none;
@@ -17,8 +19,8 @@ html, body, .container-fluid, .row, .col-md-11{
     display: block;
   }
   .sidebar-nav .navbar li a {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -28,13 +30,26 @@ html, body, .container-fluid, .row, .col-md-11{
  */
 
 .main {
+  display:block;
+  z-index:1;
   padding: 0;
 }
 .main .page-header {
   margin-top: 0;
+
 }
 
 #map-canvas {
-  height:100%;
   width:100%;
+  height:100%;
+  display:block;
+  position:absolute;
+
+
+}
+
+#map-canvas_default {
+  width:100%;
+  height:450px;
+  display:block;
 }
