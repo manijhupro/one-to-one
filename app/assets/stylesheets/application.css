@@ -10,5 +10,8 @@
  *
  *= require_self
  *= require bootstrap/bootstrap.min
+ *= require bootstrap/bootstrap-theme.min
+ *= require stylesheet
+ *= require styles
  *= require_tree .
  */

@@ -9,29 +9,36 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <span class="visible-xs navbar-brand">Sidebar menu</span>
+            <span class="visible-xs navbar-brand">1 to 1 movement</span>
         </div>
-        <div class="navbar-collapse collapse sidebar-navbar-collapse"width="1300">
+        <div class="navbar-collapse collapse sidebar-navbar-collapse">
             <ul class="nav navbar-sidebar">
-                <!--<li class="active"><a href="#"><%=image_tag("logo.jpg",height:"40", width:"40",alt:"rails") %>Logo</a></li>-->
-                <li><a href="#" data-toggle="tooltip"  data-placement="right" title="Lorem Ipsum is simply dummy text of the printing and typesetting industry."><%=image_tag("Home.png",height:"40", width:"40",alt:"rails") %>Home</a></li>
-                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."><%=image_tag("About.png",height:"40", width:"40",alt:"rails") %>About</a></li>
-                <li><a href="#" data-toggle="tooltip" data-placement="right" title="There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."><%=image_tag("Education.png",height:"40", width:"40",alt:"rails") %>Education</a></li>
-                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Contrary to popular belief, Lorem Ipsum is not simply random text."><%=image_tag("Campaigns.png",height:"40", width:"40",alt:"rails") %>Campaigns</a></li>
-                <li><a href="#" data-toggle="tooltip" data-placement="right" title="let me help you !!"><%=image_tag("Help.png",height:"40", width:"40",alt:"rails") %>Support</a></li>
-                <li><a href="#" data-toggle="tooltip" data-placement="right" title="short description "><%=image_tag("Contact.png",height:"40", width:"40",alt:"rails") %>Contact</a></li>
-                <li><a href="#" data-toggle="tooltip" data-placement="right" title="a place at the table"><%=image_tag("place.png",height:"40", width:"40",alt:"rails") %>APATT</a></li>
-                <hr>
-                <li><br></li>
-
-                <div class="span12">
-
-                        <a href="https://plus.google.com/http://1to1movement.org//posts"><img height="25" width="25" src="//imh01.inmotionhosting1.netdna-cdn.com/img/icon-google.png" alt="InMotion Hosting on Google+"></a>
-                        <a href="https://twitter.com/http://1to1movement.org/"><img height="25" width="25" src="//imh01.inmotionhosting1.netdna-cdn.com/img/icon-twitter.png" alt="InMotion Hosting on Twitter"></a>
-                        <a href="https://www.facebook.com/http://1to1movement.org/"><img height="25" width="25" src="//imh01.inmotionhosting1.netdna-cdn.com/img/icon-facebook.png" alt="InMotion Hosting on Facebook"></a>
-
-                </div>
-
+                <li>
+                    <%= link_to 'home', root_path, class: 'showPopover', data:{trigger:'hover', placement:'right', content:'Dummy Text'}%>
+                </li>
+                <li>
+                    <%= link_to 'about', 'javascript:void(0);', class: 'showPopover', data:{trigger:'hover', placement:'right', content:'Dummy Text'}%>
+                </li>
+                <li>
+                    <%= link_to 'education', 'javascript:void(0);', class: 'showPopover', data:{trigger:'hover', placement:'right', content:'Dummy Text'}%>
+                </li>
+                <li>
+                    <%= link_to 'campaign', 'javascript:void(0);', class: 'showPopover', data:{trigger:'hover', placement:'right', content:'Dummy Text'}%>
+                </li>
+                <li>
+                    <%= link_to 'help', 'javascript:void(0);', class: 'showPopover', data:{trigger:'hover', placement:'right', content:'Dummy Text'}%>
+                </li>
+                <li>
+                    <%= link_to 'contact', 'javascript:void(0);', class: 'showPopover', data:{trigger:'hover', placement:'right', content:'Dummy Text'}%>
+                </li>
+                <li>
+                    <%= link_to 'a place at the table', 'javascript:void(0);', class: 'showPopover', data:{trigger:'hover', placement:'right', content:'Dummy Text'}%>
+                </li>
+                <li>
+                    <%= link_to 'facebook', 'javascript:void(0);'%>
+                    <%= link_to 'linkedin', 'javascript:void(0);'%>
+                    <%= link_to 'twitter', 'javascript:void(0);'%>
+                </li>
 
             </ul>
         </div><!--/.nav-collapse -->

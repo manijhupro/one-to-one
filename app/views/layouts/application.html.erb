@@ -10,15 +10,7 @@
 
 </head>
 <body>
-<%= render 'layouts/header'%>
-<div class="container-fluid">
-    <div class="row" >
-        <%= render 'layouts/sidebar'%>
-        <div class="col-sm-9 col-sm-offset-0 col-md-11 col-md-offset-0 main">
-            <%= yield %>
-        </div>
-    </div>
-</div>
+<%= yield %>
 <%= javascript_include_tag "application" %>
 </body>
 </html>

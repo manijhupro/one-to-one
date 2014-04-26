@@ -13,4 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap/bootstrap.min.js
+//= require detectmobilebrowser
+//= require functions.min
+//= require initialise-functions
+//= require jquery.backstretch.min
+//= require jquery.easing.1.3
 //= require_tree .
