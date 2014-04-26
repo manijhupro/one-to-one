@@ -1,0 +1,14 @@
+<div class="jumbotron">
+    <h1><%=@location.address%></h1>
+</div>
+<div class="alert alert-info alert-dismissable">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <strong><%= notice %></strong>
+</div>
+
+<div class="col-md-12">
+    <%= image_tag "http://maps.google.com/maps/api/staticmap?size=800x300&sensor=false&zoom=16&markers=#{@location.latitude}%2C#{@location.longitude}", class:"img-responsive" %>
+    <br/>
+    <%= link_to 'Edit', edit_location_path(@location), class:'btn btn-success btn-sm', role:'button' %>
+    <%= link_to 'Back', locations_path, class:'btn btn-primary btn-sm', role:'button' %>
+</div>
