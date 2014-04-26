@@ -1,8 +1,7 @@
 OnetooneStatic::Application.routes.draw do
-  resources :locations
-
-
   root to: "static_pages#home"
+  get 'locations/pledge' => 'locations#pledge'
+  resources :locations
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
