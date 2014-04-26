@@ -2,15 +2,22 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>OnetooneStatic</title>
+  <title>1 to 1 movement</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
 
   <%= csrf_meta_tags %>
 
 </head>
 <body>
-
-<%= yield %>
+<%= render 'layouts/header'%>
+<div class="container-fluid">
+    <div class="row" >
+        <%= render 'layouts/sidebar'%>
+        <div class="col-sm-9 col-sm-offset-0 col-md-11 col-md-offset-0 main">
+            <%= yield %>
+        </div>
+    </div>
+</div>
 <%= javascript_include_tag "application" %>
 </body>
 </html>
