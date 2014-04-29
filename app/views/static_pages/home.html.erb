@@ -50,17 +50,17 @@
 
             <h1 class="section-title">About</h1>
 
-            <p class="feature-paragraph"><%=image_tag(nil, class:"lazy pull-right", data:{:'img-src'=> image_path('transp-image5b.png')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#education' %>, sit amet. Laoreet consequat. Duis dictum lorem metus, vitae dapibus.</p>
+            <p class="feature-paragraph"><%=image_tag('transp-image5b.png', class:"lazy pull-right", data:{:'img-src'=> image_path('transp-image5b.png')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#education' %>, sit amet. Laoreet consequat. Duis dictum lorem metus, vitae dapibus.</p>
             <h4>Duis dictum lorem metus</h4>
             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio. Etiam scelerisque lacus tempor, rhoncus diam vel, gravida felis. Fusce tristique sem et leo. Pellentesque sed malesuada turpis. Quisque eget lacus sit amet dui.</p>
             <p><%= link_to 'read more', 'javascript: void(0);', onclick: "populate_and_open_modal(event, 'modal-content-1');", class: 'btn btn-outline-inverse btn-sm'%></p>
 
             <div class="content-to-populate-in-modal" id="modal-content-1">
                 <h1>Lorem Ipsum</h1>
-                <p><%=image_tag('', class:"lazy rounded_border hover_effect pull-right", data:{:'img-src'=> image_path('transp-image4.png')}, alt:"Lorem Ipsum") %>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in urna vel ante mollis tincidunt. Donec nec magna condimentum tortor laoreet lobortis. Nunc accumsan sapien eu tortor fringilla, et condimentum metus pellentesque. Maecenas rhoncus tortor nec mi congue aliquet. Integer eu turpis scelerisque, iaculis magna non, tempor sem. Quisque consectetur nisi eu felis euismod, sit amet faucibus justo molestie. Ut pretium sapien dui, id facilisis metus interdum pharetra.</p>
+                <p><%=image_tag('transp-image4.png', class:"lazy rounded_border hover_effect pull-right", data:{:'img-src'=> image_path('transp-image4.png')}, alt:"Lorem Ipsum") %>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in urna vel ante mollis tincidunt. Donec nec magna condimentum tortor laoreet lobortis. Nunc accumsan sapien eu tortor fringilla, et condimentum metus pellentesque. Maecenas rhoncus tortor nec mi congue aliquet. Integer eu turpis scelerisque, iaculis magna non, tempor sem. Quisque consectetur nisi eu felis euismod, sit amet faucibus justo molestie. Ut pretium sapien dui, id facilisis metus interdum pharetra.</p>
                 <p>Etiam scelerisque lacus tempor, rhoncus diam vel, gravida felis. Fusce tristique sem et leo aliquam vulputate. Ut eget orci in sapien commodo fringilla. Ut luctus faucibus viverra. Quisque ut ante eget libero rutrum imperdiet. Morbi in diam bibendum, venenatis arcu sed, consequat libero. Nulla imperdiet, ipsum et adipiscing pulvinar, nibh metus porta mauris, et vestibulum dolor sapien sit amet justo. In dignissim leo nec erat faucibus volutpat.</p>
                 <h3>Duis dictum lorem metus, vitae dapibus</h3>
-                <p><%=image_tag('', class:"lazy rounded_border hover_effect pull-right", data:{:'img-src'=> image_path('transp-image3.png')}, alt:"Lorem Ipsum") %>Sed auctor urna mi, sed fringilla felis vulputate nec. Cras eu nibh id quam pretium convallis. Donec ante enim, placerat nec sagittis sit amet, tempor in velit. Maecenas ultricies commodo lacus id porta. Suspendisse eros elit, lacinia vitae erat vitae, egestas accumsan nunc. Maecenas dictum odio ipsum, non volutpat erat consequat tempor. Pellentesque sed malesuada turpis. Quisque eget lacus sit amet dui feugiat molestie sit amet eget purus. Morbi eget neque nec lectus tempus sagittis nec at ante. </p>
+                <p><%=image_tag('transp-image3.png', class:"lazy rounded_border hover_effect pull-right", data:{:'img-src'=> image_path('transp-image3.png')}, alt:"Lorem Ipsum") %>Sed auctor urna mi, sed fringilla felis vulputate nec. Cras eu nibh id quam pretium convallis. Donec ante enim, placerat nec sagittis sit amet, tempor in velit. Maecenas ultricies commodo lacus id porta. Suspendisse eros elit, lacinia vitae erat vitae, egestas accumsan nunc. Maecenas dictum odio ipsum, non volutpat erat consequat tempor. Pellentesque sed malesuada turpis. Quisque eget lacus sit amet dui feugiat molestie sit amet eget purus. Morbi eget neque nec lectus tempus sagittis nec at ante. </p>
                 <p>Etiam scelerisque lacus tempor, rhoncus diam vel, gravida felis. Fusce tristique sem et leo aliquam vulputate. Ut eget orci in sapien commodo fringilla. Ut luctus faucibus viverra. Quisque ut ante eget libero rutrum imperdiet. Morbi in diam bibendum, venenatis arcu sed, consequat libero. Nulla imperdiet, ipsum et adipiscing pulvinar, nibh metus porta mauris, et vestibulum dolor sapien sit amet justo. In dignissim leo nec erat faucibus volutpat.</p>
             </div><!-- #modal-content-1 -->
 
@@ -93,7 +93,7 @@
 
                         <div class="content-to-populate-in-modal" id="modal-content-2">
                             <h1>Lorem Ipsum</h1>
-                            <p><%=image_tag(nil, class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image1.png')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image1.png', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image1.png')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                         </div><!-- #modal-content-2 -->
@@ -109,7 +109,7 @@
 
                         <div class="content-to-populate-in-modal" id="modal-content-3">
                             <h1>Suspendisse molestie</h1>
-                            <p><%=image_tag(nil, class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image6.png')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image6.png', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image6.png')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                         </div><!-- #modal-content-3 -->
@@ -125,7 +125,7 @@
 
                         <div class="content-to-populate-in-modal" id="modal-content-4">
                             <h1>Maecenas id dolor</h1>
-                            <p><%=image_tag(nil, class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image7.png')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image7.png', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image7.png')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                         </div><!-- #modal-content-4 -->
@@ -141,7 +141,7 @@
 
                         <div class="content-to-populate-in-modal" id="modal-content-5">
                             <h1>Sed scelerisque</h1>
-                            <p><%=image_tag(nil, class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image4.png')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image4.png', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image4.png')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                         </div><!-- #modal-content-5 -->
@@ -230,7 +230,7 @@
                 <article class="feature-col col-md-4">
                     <%= link_to 'javascript: void(0);', onclick:"populate_and_open_modal(event, 'modal-content-6');", class:'thumbnail linked' do%>
                         <div class="image-container">
-                            <%=image_tag(nil, class:"lazy item-thumbnail", data:{:'img-src'=> image_path('project-3.jpg')}, alt:"Lorem Ipsum") %>
+                            <%=image_tag('project-3.jpg', class:"lazy item-thumbnail", data:{:'img-src'=> image_path('project-3.jpg')}, alt:"Lorem Ipsum") %>
                         </div>
                         <div class="caption">
                             <h5>Elit imperdiet</h5>
@@ -239,7 +239,7 @@
                     <%end%><!-- .thumbnail -->
 
                     <div class="content-to-populate-in-modal" id="modal-content-6">
-                        <%=image_tag(nil, class:"lazy full-width", data:{:'img-src'=> image_path('top-image1.jpg')}, alt:"Lorem Ipsum") %>
+                        <%=image_tag('top-image1.jpg', class:"lazy full-width", data:{:'img-src'=> image_path('top-image1.jpg')}, alt:"Lorem Ipsum") %>
                         <h1>Sed scelerisque</h1>
                         <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet. </p>
                         <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
@@ -250,7 +250,7 @@
                 <article class="feature-col col-md-4">
                     <%= link_to 'javascript: void(0);', onclick:"populate_and_open_modal(event, 'modal-content-7');", class:'thumbnail linked' do%>
                         <div class="image-container">
-                            <%=image_tag(nil, class:"lazy item-thumbnail", data:{:'img-src'=> image_path('project-2.jpg')}, alt:"Lorem Ipsum") %>
+                            <%=image_tag('project-2.jpg', class:"lazy item-thumbnail", data:{:'img-src'=> image_path('project-2.jpg')}, alt:"Lorem Ipsum") %>
                         </div>
                         <div class="caption">
                             <h5>Nullam ac rhoncus</h5>
@@ -259,7 +259,7 @@
                     <%end%><!-- .thumbnail -->
 
                     <div class="content-to-populate-in-modal" id="modal-content-7">
-                        <%=image_tag(nil, class:"lazy full-width", data:{:'img-src'=> image_path('top-image2.jpg')}, alt:"Lorem Ipsum") %>
+                        <%=image_tag('top-image2.jpg', class:"lazy full-width", data:{:'img-src'=> image_path('top-image2.jpg')}, alt:"Lorem Ipsum") %>
                         <h1>Sed scelerisque</h1>
                         <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet. </p>
                         <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
@@ -270,7 +270,7 @@
                 <article class="feature-col col-md-4">
                     <%= link_to 'javascript: void(0);', onclick:"populate_and_open_modal(event, 'modal-content-8');", class:'thumbnail linked' do%>
                         <div class="image-container">
-                            <%=image_tag(nil, class:"lazy item-thumbnail", data:{:'img-src'=> image_path('project-4.jpg')}, alt:"Lorem Ipsum") %>
+                            <%=image_tag('project-4.jpg', class:"lazy item-thumbnail", data:{:'img-src'=> image_path('project-4.jpg')}, alt:"Lorem Ipsum") %>
                         </div>
                         <div class="caption">
                             <h5>Aliquam adipiscing</h5>
@@ -279,7 +279,7 @@
                     <%end%><!-- .thumbnail -->
 
                     <div class="content-to-populate-in-modal" id="modal-content-8">
-                        <%=image_tag(nil, class:"lazy full-width", data:{:'img-src'=> image_path('top-image3.jpg')}, alt:"Lorem Ipsum") %>
+                        <%=image_tag('top-image3.jpg', class:"lazy full-width", data:{:'img-src'=> image_path('top-image3.jpg')}, alt:"Lorem Ipsum") %>
                         <h1>Sed scelerisque</h1>
                         <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet. </p>
                         <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
