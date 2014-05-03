@@ -1,17 +1,10 @@
-<div class="background-image-overlay" id="map"><!-- maps --></div>
+<div class="background-image-overlay"></div>
 
-<div id="outer-background-container"></div>
+<div id="outer-background-container" data-default-background-img="<%= image_path('bg5.jpg')%>" style="background-image:image-url('bg5.jpg');"></div>
 <!-- end: #outer-background-container -->
 
 <!-- Outer Container -->
 <div id="outer-container">
-
-
-<section id="show-menu" style="display:none;">
-      <div class="logo">
-            <%= link_to 'Show Menu', 'javascript: void(0);', class:'link-scroll', onclick:'showMenu();'%>
-      </div>
-</section>
 
 
 <!-- Left Sidebar -->
@@ -44,7 +37,7 @@
             <section class="feature-text">
                 <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
                 <p>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet. </p>
-                <p><%=link_to 'view map', 'javascript:void(0);', onclick:'showMap();', class:'link-scroll btn btn-outline-inverse btn-lg' %></p>
+                <p><%=link_to 'get started', '#about', class:'link-scroll btn btn-outline-inverse btn-lg' %></p>
             </section>
 
         </div><!-- .col-sm-10 -->
@@ -391,22 +384,3 @@
         </div><!-- .modal-content -->
     </div><!-- .modal-dialog -->
 </div><!-- .modal -->
-
-<script type='text/javascript'>
-    function showMap(){
-        $("#map").removeClass('background-image-overlay');
-        $('#main-content').hide();
-	  $('#left-sidebar').hide();
-        $('#left-sidebar').attr('id', 'menu');
-        $('#show-menu').attr('id', 'left-sidebar');
-	  $('#left-sidebar').show();
-    }
-    function showMenu(){
-	    $("#map").addClass('background-image-overlay');
-	    $('#main-content').show();
-	    $('#left-sidebar').attr('id', 'show-menu');
-	    $('#show-menu').hide();
-	    $('#menu').attr('id', 'left-sidebar');
-	    $('#left-sidebar').show();
-    }
-</script>
