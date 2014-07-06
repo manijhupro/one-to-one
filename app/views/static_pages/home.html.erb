@@ -3,6 +3,7 @@
 <div id="outer-background-container" data-default-background-img="<%= image_path('bg5.jpg')%>" style="background-image:image-url('bg5.jpg');"></div>
 <!-- end: #outer-background-container -->
 
+
 <!-- Outer Container -->
 <div id="outer-container">
 
@@ -10,33 +11,40 @@
 <!-- Left Sidebar -->
 <section id="left-sidebar">
 
-    <div class="logo">
+    <!--div class="logo">
         <%= link_to image_tag('logo.png', alt:'Logo'), '#intro', class:'link-scroll'%>
     </div><!-- .logo -->
-
     <!-- Menu Icon for smaller viewports -->
     <div id="mobile-menu-icon" class="visible-xs" onClick="toggle_main_menu();"><span class="glyphicon glyphicon-th"></span></div>
 
     <ul id="main-menu">
-        <li id="menu-item-about" class="menu-item scroll"><%=link_to 'about', '#about' %></li>
-        <li id="menu-item-education" class="menu-item scroll"><%=link_to 'education', '#education' %></li>
-        <li id="menu-item-campaigns" class="menu-item scroll"><%=link_to 'campaigns', '#campaigns' %></li>
+        <li class="menu-item scroll"><%=link_to 'Home', '#intro' %></li>
+        <li id="menu-item-about" class="menu-item scroll"><%=link_to 'About Us', '#about' %></li>
+        <li id="menu-item-education" class="menu-item scroll"><%=link_to 'Services', '#education' %></li>
+        <li id="menu-item-campaigns" class="menu-item scroll"><%=link_to 'Blog', '#campaigns' %></li>
         <li id="menu-item-support" class="menu-item scroll"><%=link_to 'support', '#support' %></li>
-        <li id="menu-item-contact" class="menu-item scroll"><%=link_to 'contact', '#contact' %></li>
+        <li id="menu-item-contact" class="menu-item scroll"><%=link_to 'Contact Us', '#contact' %></li>
     </ul><!-- #main-menu -->
 
 </section><!-- #left-sidebar -->
 <!-- end: Left Sidebar -->
 
+
+
 <section id="main-content" class="clearfix">
 
 <article id="intro" class="section-wrapper clearfix">
+
+    <div class="google-maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581931.843568942!2d83.44342169752825!3d28.75000465373178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995e8c77d2e68cf%3A0x34a29abcd0cc86de!2sNepal!5e0!3m2!1sen!2s!4v1404638479455" width="800" height="600" frameborder="0" style="border:0"></iframe>    </div>
     <div class="content-wrapper clearfix">
         <div class="col-sm-10 col-md-9 pull-right">
 
-            <section class="feature-text">
-                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+          <section class="feature-text">
+                <!--h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
                 <p>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet. </p>
+                -->
+
                 <p><%=link_to 'get started', '#about', class:'link-scroll btn btn-outline-inverse btn-lg' %></p>
             </section>
 
@@ -75,10 +83,10 @@
 
             <!-- Indicators - slide navigation -->
             <ol class="carousel-indicators title-indicators">
-                <li data-target="#features-carousel" data-slide-to="0" class="active">Lorem Ipsum</li>
-                <li data-target="#features-carousel" data-slide-to="1">Suspendisse</li>
-                <li data-target="#features-carousel" data-slide-to="2">Maecenas</li>
-                <li data-target="#features-carousel" data-slide-to="3">Scelerisque</li>
+                <li data-target="#features-carousel" data-slide-to="0" class="active">Trekking in Nepal</li>
+                <li data-target="#features-carousel" data-slide-to="1">Adventure</li>
+                <li data-target="#features-carousel" data-slide-to="2">Pilgrims Tour</li>
+                <li data-target="#features-carousel" data-slide-to="3">Holiday Tour</li>
             </ol>
 
             <!-- Wrapper for slides -->
@@ -86,14 +94,14 @@
 
                 <div class="item active">
                     <div class="carousel-text-content">
-                        <%= image_tag('transp-image1.png', class:'icon', alt:'Lorem Ipsum')%>
-                        <h2 class="title">Lorem Ipsum</h2>
+                        <%= image_tag('transp-image1.jpeg', class:'icon', alt:'Lorem Ipsum')%>
+                        <h2 class="title">Trekking in Nepal</h2>
                         <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio.</p>
                         <p><%= link_to 'read more', 'javascript: void(0);', onclick:"populate_and_open_modal(event, 'modal-content-2');", class:'btn btn-outline-inverse btn-sm'%></p>
 
                         <div class="content-to-populate-in-modal" id="modal-content-2">
-                            <h1>Lorem Ipsum</h1>
-                            <p><%=image_tag('transp-image1.png', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image1.png')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <h1>Trekking in Nepal</h1>
+                            <p><%=image_tag('transp-image1.jpeg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image1.jpeg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                         </div><!-- #modal-content-2 -->
@@ -102,14 +110,14 @@
 
                 <div class="item">
                     <div class="carousel-text-content">
-                        <%= image_tag('transp-image6.png', class:'icon', alt:'Lorem Ipsum')%>
-                        <h2 class="title">Suspendisse molestie</h2>
+                        <%= image_tag('transp-image6.jpg', class:'icon', alt:'Lorem Ipsum')%>
+                        <h2 class="title">Adventure</h2>
                         <p>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Duis dictum lorem metus.</p>
                         <p><%= link_to 'read more', 'javascript: void(0);', onclick:"populate_and_open_modal(event, 'modal-content-3');", class:'btn btn-outline-inverse btn-sm'%></p>
 
                         <div class="content-to-populate-in-modal" id="modal-content-3">
-                            <h1>Suspendisse molestie</h1>
-                            <p><%=image_tag('transp-image6.png', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image6.png')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <h1>Adventure</h1>
+                            <p><%=image_tag('transp-image6.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image6.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                         </div><!-- #modal-content-3 -->
@@ -118,14 +126,14 @@
 
                 <div class="item">
                     <div class="carousel-text-content">
-                        <%= image_tag('transp-image7.png', class:'icon', alt:'Lorem Ipsum')%>
-                        <h2 class="title">Maecenas id dolor</h2>
+                        <%= image_tag('transp-image7.jpeg', class:'icon', alt:'Lorem Ipsum')%>
+                        <h2 class="title">Pilgrims Tour</h2>
                         <p>Fusce erat augue, fermentum sit amet congue a, ullamcorper ac enim. Maecenas id dolor imperdiet, mollis felis ut, pellentesque ante. Sed id congue arcu. Nulla eget commodo sem. Suspendisse suscipit, sem ac.</p>
                         <p><%= link_to 'read more', 'javascript: void(0);', onclick:"populate_and_open_modal(event, 'modal-content-4');", class:'btn btn-outline-inverse btn-sm'%></p>
 
                         <div class="content-to-populate-in-modal" id="modal-content-4">
-                            <h1>Maecenas id dolor</h1>
-                            <p><%=image_tag('transp-image7.png', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image7.png')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <h1>Pilgrims Tour</h1>
+                            <p><%=image_tag('transp-image7.jpeg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image7.jpeg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                         </div><!-- #modal-content-4 -->
@@ -134,14 +142,21 @@
 
                 <div class="item">
                     <div class="carousel-text-content">
-                        <%= image_tag('transp-image4.png', class:'icon', alt:'Lorem Ipsum')%>
-                        <h2 class="title">Sed scelerisque</h2>
-                        <p>Aenean a est fringilla, malesuada eros vel, condimentum augue. Sed lorem sapien, vestibulum quis nisl volutpat, fermentum adipiscing massa. Cras ac faucibus nisl. Proin ac convallis sapien. </p>
+                        <%= image_tag('transp-image4.jpg', class:'icon', alt:'Lorem Ipsum')%>
+                        <h2 class="title">Holiday Tour</h2>
+                        <p>Nepal is a truly memorable holiday destination. The most interesting parts are the Kathmandu Valley
+                            Lumbini Region
+                            Pokhara Region
+                            Chitwan Region
+                            Bardiya Region
+                            Illam and East Region
+                            Daman
+                            . </p>
                         <p><%= link_to 'read more', 'javascript: void(0);', onclick:"populate_and_open_modal(event, 'modal-content-5');", class:'btn btn-outline-inverse btn-sm'%></p>
 
                         <div class="content-to-populate-in-modal" id="modal-content-5">
-                            <h1>Sed scelerisque</h1>
-                            <p><%=image_tag('transp-image4.png', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image4.png')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <h1>Holiday Tour</h1>
+                            <p><%=image_tag('transp-image4.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image4.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                         </div><!-- #modal-content-5 -->
@@ -366,7 +381,7 @@
     </ul>
 
     <!-- copyright text -->
-    <div class="footer-text-line">&copy; 2014 | 1 to 1 movement</div>
+    <div class="footer-text-line">&copy; 2014 | TRAVELS AND TOURS </div>
 </section>
 <!-- end: Footer -->
 
