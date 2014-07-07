@@ -1,0 +1,21 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.element {
+}
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+input {
+  line-height: normal;
+}
+button, input, optgroup, select, textarea {
+  color: #000000;
+  font: inherit;
+  margin: 0px;
+}
+* {
+  box-sizing: border-box;
+}

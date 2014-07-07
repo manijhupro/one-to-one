@@ -15,6 +15,11 @@ group :assets do
   gem 'uglifier', '1.2.3'
 end
 
+
+
+gem "bcrypt-ruby", :require => "bcrypt"
+
+
 gem 'jquery-rails', '2.0.2'
 gem 'geocoder'
 

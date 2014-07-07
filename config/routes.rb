@@ -1,4 +1,20 @@
 OnetooneStatic::Application.routes.draw do
+
+
+  get "log_out" => "sessions#destroy", :as => "log_out"
+  get "log_in" => "sessions#new", :as => "log_in"
+  get "sign_up" => "users#new", :as => "sign_up"
+
+  match '/admin-login', to: 'sessions#new'
+
+  resources :users
+  resources :sessions
+
+
+  get "sessions/new"
+
+  get "users/new"
+
   root to: "static_pages#home"
   get 'locations/pledge' => 'locations#pledge'
   resources :locations
