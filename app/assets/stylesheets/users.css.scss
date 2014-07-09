@@ -19,3 +19,12 @@ button, input, optgroup, select, textarea {
 * {
   box-sizing: border-box;
 }
+
+p, ol, ul, td {
+  font-family: verdana,arial,helvetica,sans-serif;
+  font-size: 23px;
+  line-height: 21px;
+}
+td, th {
+  padding: 13px;
+}

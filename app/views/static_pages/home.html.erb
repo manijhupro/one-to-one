@@ -174,64 +174,46 @@
     </div><!-- .content-wrapper -->
 </article><!-- .section-wrapper -->
 
+
+
 <article id="campaigns" class="section-wrapper clearfix" data-custom-background-img="<%= image_path('bg2.jpg')%>">
-    <div class="content-wrapper clearfix">
-        <div class="col-sm-11 col-md-10 pull-right">
+      <div class="content-wrapper ">
+            <h1 class="section-title">Listing posts</h1>
+     <!-- grid -->
+                <div>
+                                <table style="font-size: 20px">
+                                    <tr>
+                                        <th>Title</th><td></td><td></td><td></td>
+                                        <th>Body</th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
 
-            <h1 class="section-title">Campaigns</h1>
+                                    <% @posts.each do |post| %>
+                                        <tr>
+                                            <td><%= post.title %></td><td></td><td></td><td></td>
 
-            <!-- grid -->
-            <section class="grid row clearfix clearfix-for-2cols">
+                                            <td><%=truncate post.body%></td>
+                                            <td><%= link_to 'Show', post %></td>
 
-                <!-- grid item -->
-                <div class="grid-item col-md-6">
-                    <div class="item-content clearfix">
-                        <span class="icon glyphicon glyphicon-stats"></span>
-                        <div class="text-content">
-                            <h5>Lorem ipsum dolor sit amet</h5>
-                            <p>Nullam ac rhoncus sapien, non gravida purus. Aliquam adipiscing eros non elit imperdiet congue. Integer ultricies.</p>
-                        </div>
-                    </div><!-- end: .item-content -->
-                </div><!-- end: .grid-item -->
+                                            <% if current_user.present? %>
+                                            <td><%= link_to 'Edit', edit_post_path(post) %></td>
+                                            <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                                                <% end %>
+                                        </tr>
+                                    <% end %>
+                                </table>
 
-                <!-- grid item -->
-                <div class="grid-item col-md-6">
-                    <div class="item-content clearfix">
-                        <span class="icon glyphicon glyphicon-record"></span>
-                        <div class="text-content">
-                            <h5>Aliquam adipiscing eros non elit</h5>
-                            <p>Nullam ac rhoncus sapien, non gravida purus. Alinon elit imperdiet congue. Integer ultricies sed ligula eget tempus.</p>
-                        </div>
-                    </div><!-- end: .item-content -->
-                </div><!-- end: .grid-item -->
+                                <br />
 
-                <!-- grid item -->
-                <div class="grid-item col-md-6">
-                    <div class="item-content clearfix">
-                        <span class="icon glyphicon glyphicon-lock"></span>
-                        <div class="text-content">
-                            <h5>Integer ultricies sed ligula</h5>
-                            <p>Aliquam adipiscing eros non elit imperdiet congue. Integer ultricies sed ligula ligula eget.</p>
-                        </div>
-                    </div><!-- end: .item-content -->
-                </div><!-- end: .grid-item -->
+                    <% if current_user.present? %>  <h4> <%= link_to 'New Post', new_post_path %><% end %></h4>
 
-                <!-- grid item -->
-                <div class="grid-item col-md-6">
-                    <div class="item-content clearfix">
-                        <span class="icon glyphicon glyphicon-file"></span>
-                        <div class="text-content">
-                            <h5>Lorem ipsum dolor sit amet</h5>
-                            <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Integer ultricies sed ligula eget tempus.</p>
-                        </div>
-                    </div><!-- end: .item-content -->
-                </div><!-- end: .grid-item -->
-
-            </section><!-- end: grid -->
-
-        </div><!-- .col-sm-11 -->
-    </div><!-- .content-wrapper -->
+                </div>
+     </div><!-- .content-wrapper -->
 </article><!-- .section-wrapper -->
+
+
 
 <article id="support" class="section-wrapper clearfix" data-custom-background-img="<%= image_path('bg3.jpg')%>">
     <div class="content-wrapper clearfix">
