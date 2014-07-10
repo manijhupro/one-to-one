@@ -185,7 +185,7 @@
 <article id="campaigns" class="section-wrapper clearfix" data-custom-background-img="<%= image_path('bg2.jpg')%>">
       <div class="content-wrapper ">
             <h1 class="section-title">Listing posts</h1>
-     <!-- grid -->
+
                 <div>
                                 <table style="font-size: 20px">
                                     <tr>
@@ -204,7 +204,7 @@
 
                                             <td><%= link_to "View & Add Comments (#{post.comments.count})" ,post%></td>
 
-                                            <% if current_user.present? %>-->
+                                            <% if current_user.present? %>
                                             <td><%= link_to 'Edit', edit_post_path(post) %></td>
                                             <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
                                                 <% end %>
