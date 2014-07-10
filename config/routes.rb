@@ -1,6 +1,10 @@
 OnetooneStatic::Application.routes.draw do
 
 
+  get "sessions/new"
+
+  get "users/new"
+
   resources :posts
 
 
@@ -18,10 +22,6 @@ OnetooneStatic::Application.routes.draw do
   resources :users
   resources :sessions
 
-
-  get "sessions/new"
-
-  get "users/new"
 
   root to: "static_pages#home"
   get 'locations/pledge' => 'locations#pledge'
