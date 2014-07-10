@@ -195,7 +195,8 @@
                                             <td><%= post.title %></td><td></td><td></td><td></td>
 
                                             <td><%=truncate post.body%></td>
-                                            <td><%= link_to 'Show', post %></td>
+
+                                            <td><%= link_to "View & Add Comments (#{post.comments.count})" ,post%></td>
 
                                             <% if current_user.present? %>-->
                                             <td><%= link_to 'Edit', edit_post_path(post) %></td>

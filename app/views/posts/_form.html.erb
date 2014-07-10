@@ -1,3 +1,8 @@
+<div class="background-image-overlay"></div>
+
+<div id="outer-background-container" data-default-background-img="<%= image_path('bg5.jpg')%>" style="background-image:image-url('bg5.jpg');"></div>
+
+
 <%= form_for(@post) do |f| %>
   <% if @post.errors.any? %>
     <div id="error_explanation">
@@ -17,7 +22,7 @@
   </div>
   <div class="field">
     <%= f.label :body %><br />
-    <%= f.text_area :body %>
+    <%= f.text_area :body, :cols => "100", :rows => "7" %>
   </div>
   <div class="actions">
     <%= f.submit %>

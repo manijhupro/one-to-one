@@ -1,11 +1,15 @@
 OnetooneStatic::Application.routes.draw do
 
 
+  resources :posts do
+    resources :comments, :only => [:create]
+  end
+
   get "sessions/new"
 
   get "users/new"
 
-  resources :posts
+
 
 
   #has_many :posts

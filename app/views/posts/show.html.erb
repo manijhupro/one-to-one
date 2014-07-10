@@ -1,3 +1,8 @@
+<div class="background-image-overlay"></div>
+
+<div id="outer-background-container" data-default-background-img="<%= image_path('bg5.jpg')%>" style="background-image:image-url('bg5.jpg');"></div>
+
+
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -13,3 +18,22 @@
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>
+
+<!--Putting comments into your HTML view-->
+
+<h2>Comments</h2>
+<div id="comments">
+    <%= render :partial => @post.comments %>
+</div>
+
+<!--the form for submitting a comment-->
+
+<%= form_for [@post, Comment.new] do |f| %>
+    <p>
+        <%= f.label :email, "Email:" %>
+        <%= f.text_field :email %><br/>
+        <%= f.label :body, "New comment" %><br/>
+        <%= f.text_area :body, :cols => "20", :rows => "5" %>
+    </p>
+    <p><%= f.submit "Add comment" %></p>
+<% end %>
