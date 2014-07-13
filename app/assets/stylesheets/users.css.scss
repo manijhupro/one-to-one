@@ -22,9 +22,21 @@ button, input, optgroup, select, textarea {
 
 p, ol, ul, td {
   font-family: verdana,arial,helvetica,sans-serif;
-  font-size: 23px;
+  font-size: 19px;
   line-height: 21px;
 }
 td, th {
   padding: 13px;
+}
+p {
+  margin: 2em 43px;
+}
+
+body {
+  background-color: #FFF;
+  color: #B9DEF0;
+  font-family: verdana,arial,helvetica,sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 20px;
 }
