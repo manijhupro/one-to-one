@@ -954,7 +954,7 @@ h6 {
 
 #main-content .feature-columns .feature-col .thumbnail img.item-thumbnail {
     width:100% !important;
-    height:auto !important;
+//    height:auto !important;
     opacity: 0.8;
     filter: alpha(opacity=80);
     -webkit-transition: all 0.4s;
@@ -1361,7 +1361,7 @@ h6 {
         }
         #main-content .carousel .icon {
             margin:0 auto 30px auto;
-            width:110px;
+            width:300px;
         } 
         #main-content .carousel .icon.glyphicon {
             margin:0 auto 50px auto;
@@ -1504,7 +1504,7 @@ img.pull-right {
 
 img.full-width {
     width:100% !important;
-    height: auto !important;
+    height: 350px;
 }
 
     @media (min-width: 768px) { 

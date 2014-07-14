@@ -59,12 +59,12 @@
             <h1 class="section-title">About US</h1>
 
             <p class="feature-paragraph"><div class="lazy pull-right"><iframe width="420" height="315" src="//www.youtube.com/embed/T-3AZSbt0wo" frameborder="0" allowfullscreen></iframe></div>
-        Tour and Travel Agency is a Nepal's local tour operator, travel agency base in Kathmandu, providing
+      <p> Tour and Travel Agency is a Nepal's local tour operator, travel agency base in Kathmandu, providing
         information and service in the tourism field,
         offering great <%=link_to 'Services ', '#education' %> in discounted rates. We
         have been in this trade since 2014, operating Nepal tour, Nepal travels, package tour, jungle safari, hotel booking
         in accordance with the highest ethical and business
-        standards. ,  </p>
+        standards. ,</p>
             <h4>Tour and Travel</h4>
             <p> Jhupro Tour and Travels P.Ltd is the leading and pioneer travel agent for adventure travel and tours operation from its existence till today.  Our aim is to provide our best <%=link_to 'Services ', '#education' %> to the guests. .</p>
             <p><%= link_to 'read more', 'javascript: void(0);', onclick: "populate_and_open_modal(event, 'modal-content-1');", class: 'btn btn-outline-inverse btn-sm'%></p>
@@ -102,7 +102,7 @@
                     <div class="carousel-text-content">
                         <%= image_tag('transp-image1.jpeg', class:'icon', alt:'Lorem Ipsum')%>
                         <h2 class="title">Trekking in Nepal</h2>
-                        <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio.</p>
+                        <p>Blessed with enchanting landscapes and mystic Himalayas, this beautiful country has in store a lot for everyone visiting here. Nepal trek is all about exploring the beautiful nature and the flora and fauna residing on it with highs and lows of the trekking trails. </p>
                         <p><%= link_to 'read more', 'javascript: void(0);', onclick:"populate_and_open_modal(event, 'modal-content-2');", class:'btn btn-outline-inverse btn-sm'%></p>
 
                         <div class="content-to-populate-in-modal" id="modal-content-2">
@@ -151,7 +151,7 @@
                     <div class="carousel-text-content">
                         <%= image_tag('transp-image6.jpg', class:'icon', alt:'Lorem Ipsum')%>
                         <h2 class="title">Adventure</h2>
-                        <p>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Duis dictum lorem metus.</p>
+                        <p>Whether you choose to Zipliner, bungy jump, canyon, ice-climb, rock climb, climb trekking peaks, fly over mountains or fly an ultra-light, you will find an adventure every day in Nepal. </p>
                         <p><%= link_to 'read more', 'javascript: void(0);', onclick:"populate_and_open_modal(event, 'modal-content-3');", class:'btn btn-outline-inverse btn-sm'%></p>
 
                         <div class="content-to-populate-in-modal" id="modal-content-3">
@@ -215,7 +215,8 @@
                     <div class="carousel-text-content">
                         <%= image_tag('transp-image7.jpeg', class:'icon', alt:'Lorem Ipsum')%>
                         <h2 class="title">Pilgrims Tour</h2>
-                        <p>Fusce erat augue, fermentum sit amet congue a, ullamcorper ac enim. Maecenas id dolor imperdiet, mollis felis ut, pellentesque ante. Sed id congue arcu. Nulla eget commodo sem. Suspendisse suscipit, sem ac.</p>
+                        <p>Nepal has several ancient pilgrimage sites. Each temple is attached to a legend or belief that glorifies the miraculous powers of its deity.
+                            Nepal is also the Gateway to Kailash Mansarovar, the mythical abode of Lord Shiva. Devotees from various parts of Nepal and India throng the temples during special festivals</p>
                         <p><%= link_to 'read more', 'javascript: void(0);', onclick:"populate_and_open_modal(event, 'modal-content-4');", class:'btn btn-outline-inverse btn-sm'%></p>
 
                         <div class="content-to-populate-in-modal" id="modal-content-4">
@@ -243,13 +244,7 @@
                     <div class="carousel-text-content">
                         <%= image_tag('transp-image4.jpg', class:'icon', alt:'Lorem Ipsum')%>
                         <h2 class="title">Holiday Tour</h2>
-                        <p>Nepal is a truly memorable holiday destination. The most interesting parts are the Kathmandu Valley
-                            Lumbini Region
-                            Pokhara Region
-                            Chitwan Region
-                            Bardiya Region
-                            Illam and East Region
-                            Daman
+                        <p>If Treking, adventure  and pilgrims are not your to do’s or you thought of exploring Nepal more after such trips then we have a holiday tour for you to making you walk, ride, travel and fly to different cities of Nepal like Chitwan, Pokhara, Kathmadu, Lumbini, etc all packed with experiences like never before.
                             . </p>
                         <p><%= link_to 'read more', 'javascript: void(0);', onclick:"populate_and_open_modal(event, 'modal-content-5');", class:'btn btn-outline-inverse btn-sm'%></p>
 
@@ -351,60 +346,70 @@
                 <article class="feature-col col-md-4">
                     <%= link_to 'javascript: void(0);', onclick:"populate_and_open_modal(event, 'modal-content-6');", class:'thumbnail linked' do%>
                         <div class="image-container">
-                            <%=image_tag('project-3.jpg', class:"lazy item-thumbnail", data:{:'img-src'=> image_path('project-3.jpg')}, alt:"Lorem Ipsum") %>
+                            <%=image_tag('school.jpg', class:"lazy item-thumbnail", data:{:'img-src'=> image_path('school.jpg')}, alt:"make school" ) %>
                         </div>
                         <div class="caption">
-                            <h4>Make School and Library</h4>
-                            <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue.</p>
+                            <h2>Make School and Library</h2>
+                            <h4><p>Contribute to education, stay with local people, eat local food, and create a life time memory.</p></h4>
                         </div><!-- .caption -->
                     <%end%><!-- .thumbnail -->
 
                     <div class="content-to-populate-in-modal" id="modal-content-6">
-                        <%=image_tag('top-image1.jpg', class:"lazy full-width", data:{:'img-src'=> image_path('top-image1.jpg')}, alt:"Lorem Ipsum") %>
+                        <%=image_tag('school inside.jpg', class:"lazy full-width", data:{:'img-src'=> image_path('school inside.jpg')}, alt:"make school") %>
                         <h1>Make School and Library</h1>
-                        <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet. </p>
-                        <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
-                        <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
-                    </div><!-- #modal-content-6 -->
+                        Sandwiched between the giants of India and China, the small country of Nepal is home to eight of the ten highest mountains in the world, including the greatest of them all—Mount Everest. Most Nepalese live in the rocky plains and valleys that sit in the shadows of the towering Himalayas or the remote southern flatlands of the Tarai, where transportation infrastructure is scarce and the terrain is challenging, even by foot.  Roughly 50% of all Nepalese live in poverty, on less than US$2/day. The very mountains that give Nepal its grandeur make building sustainable infrastructure a slow and arduous process. A significant portion of the country’s population lives in rural areas where no phones, roads, clean water, or schools exist.
+                        While the country's educational system has made a great deal of progress in a very short time, there is still much to be done. Many government schools are run down and underfunded, especially in the countryside. Despite the government’s policy of providing free primary education, overcrowding and lack of materials keep many children from reaching their full potential or even finishing primary school.
+                        Government funding usually accommodates teachers’ salaries, but all other costs are expected to be covered by the village families—meaning libraries and books are extremely scarce. Schools that do have books recognize that they are a precious commodity and often lock them up for safekeeping—unavailable for use by children.
+                        Individual family situations and cultural bias further complicate the effort to achieve universal education. Girls typically have less access of educational resources and opportunities than their male counterparts, making them 22% less likely to be literate.
+                        Join our volunteering tour to Nepal to build school and libraries in rural areas.
+
+
+                       </div><!-- #modal-content-6 -->
                 </article>
 
                 <article class="feature-col col-md-4">
                     <%= link_to 'javascript: void(0);', onclick:"populate_and_open_modal(event, 'modal-content-7');", class:'thumbnail linked' do%>
                         <div class="image-container">
-                            <%=image_tag('project-2.jpg', class:"lazy item-thumbnail", data:{:'img-src'=> image_path('project-2.jpg')}, alt:"Lorem Ipsum") %>
+                            <%=image_tag('wildlife.jpg', class:"lazy item-thumbnail", data:{:'img-src'=> image_path('wildlife.jpg')}, alt:"wildlife") %>
                         </div>
                         <div class="caption">
-                            <h4>Wildlife Conservation</h4>
-                            <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Integer ultricies.</p>
+                            <h2>Wildlife Conservation</h2>
+                            <h4><p>Teach people, learn about wild life, encounter with wild animals and smile. </p></h4>
                         </div><!-- .caption -->
                     <%end%><!-- .thumbnail -->
 
                     <div class="content-to-populate-in-modal" id="modal-content-7">
-                        <%=image_tag('top-image2.jpg', class:"lazy full-width", data:{:'img-src'=> image_path('top-image2.jpg')}, alt:"Lorem Ipsum") %>
+                        <%=image_tag('wildlife inside.jpg', class:"lazy full-width", data:{:'img-src'=> image_path('wildlife inside.jpg')}, alt:"wildlife") %>
                         <h1>Wildlife Conservation</h1>
-                        <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet. </p>
-                        <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
-                        <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
+                        Wildlife diversity is a notable feature of Nepal. Because of the variance in climate, from tropical to arctic, Nepal has a large variety of plants and animals. Wildlife tourism is also a major source of tourism in the country. There are some animal species which are unique to Nepal, such as the spiny babbler. Nepal is also host to a large number of rhododendron species. The wildlife of Nepal includes its flora and fauna. They are no natural habitats in Nepal. Nepal has established numerous National Parks and reserves in order to protect its diverse fauna. Nepal is a biodiversity hot spot with ecoregions broadly comprising the mountainous eco region, the savanna and grasslands ecoregion of the terai (foot hills), and the Rara Lake eco region, which has many endemic species.
+
+                        Conserving wildlife controls over the ecosystem in a balanced way. Ecosystem is a chain of support of all living things and non-living things for existence. Conserving wildlife economically supports the country. Wild conservation needs reserves and national parks as well. They have to pay the certain amount of money to be entered and a big fund can be raised ultimately. Tourists keep on traveling and paying for seeing the endangered animals. Tourists spend money in our country and people become economically rich.
+
+                        Some important animals are going to be vanished that hampers to keep the ecosystem balanced. Important animals can’t be seen in the zoo, too. Being over populated, the people started destroying wildlife for their use.
+
+                        Join our volunteering tour to Nepal to help conserve wildlife so people like you can come here for wildlife in future too.
+
                     </div><!-- #modal-content-7 -->
                 </article>
 
                 <article class="feature-col col-md-4">
                     <%= link_to 'javascript: void(0);', onclick:"populate_and_open_modal(event, 'modal-content-8');", class:'thumbnail linked' do%>
                         <div class="image-container">
-                            <%=image_tag('project-4.jpg', class:"lazy item-thumbnail", data:{:'img-src'=> image_path('project-4.jpg')}, alt:"Lorem Ipsum") %>
+                            <%=image_tag('health.jpg', class:"lazy item-thumbnail", data:{:'img-src'=> image_path('health.jpg')}, alt:"Lorem Ipsum") %>
                         </div>
                         <div class="caption">
-                            <h4>community health camp</h4>
-                            <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet.</p>
+                            <h2>Community Health Camp</h2>
+                            <h4> <p>Help rural people and be a savior (people even die of diarrhea in Nepal). </p></h4>
                         </div><!-- .caption -->
                     <%end%><!-- .thumbnail -->
 
                     <div class="content-to-populate-in-modal" id="modal-content-8">
-                        <%=image_tag('top-image3.jpg', class:"lazy full-width", data:{:'img-src'=> image_path('top-image3.jpg')}, alt:"Lorem Ipsum") %>
-                        <h1>community health camp</h1>
-                        <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet. </p>
-                        <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
-                        <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
+                        <%=image_tag('health inside.jpg', class:"lazy full-width", data:{:'img-src'=> image_path('health inside.jpg')}, alt:"Lorem Ipsum") %>
+                        <h1>Community Health Camp</h1>
+                        “For the sixth consecutive year, Canadian and American volunteers will travel to Nepal in 2010 to provide Dental and Medical services to Nepalese villagers who would otherwise not have access to this basic care. This is part of a six-day health camp that offers free medical and dental diagnosis and treatments as well as workshops and demonstrations to give the villagers a chance for a better life.”
+                        -Kathy Johnson, Langley, BC
+                        Nothing can better explain our moto than the paragraph above. Much of rural Nepal is located on hilly or mountainous regions. The rugged terrain and the lack of proper infrastructure makes it highly inaccessible, limiting the availability of basic health care. In many villages, the only mode of transportation is by foot. This results in a delay of treatment, which can be detrimental to patients in need of immediate medical attention. Most of Nepal’s health care facilities are concentrated in urban areas. Rural health facilities often lack adequate funding. In 2003, Nepal had ten health centers, 83 hospitals, 700 health posts, and 3,158 "sub-health posts", which serve villages. In addition, there were 1,259 physicians, one for every 18,400 persons. In 2000, government funding for health matters was approximately US$2.30 per person, and approximately 70 percent of health expenditures came from out-of-pocket contributions. Government allocations for health were around 5.1 percent of the budget for fiscal year 2004, and foreign donors provided around 30 percent of the total budget for health expenditures.
+                        Join our volunteering tour to Nepal to help Nepalese people servive death from diseases which are already eradicated from first countries.
                     </div><!-- #modal-content-8 -->
 
                 </article>
@@ -424,9 +429,9 @@
 
         <!-- CONTACT DETAILS -->
         <div class="contact-details col-sm-5 col-md-3">
-            <p>123A,<br/>Molestie Odio Avenue,<br/>Aliquam<br/>AAA0010</p>
-            <p>Tel: (+70) 81 451 576</p>
-            <p><%= link_to 'info@loremipsum.com', 'mailto:info@loremipsum.com'%></p>
+            <p>2014,<br/>Tour and Travel,<br/>Aliquam<br/>AAA0010</p>
+            <p>Tel: (+977) 98-</p>
+            <p><%= link_to 'travel@tour.com', 'mailto:info@loremipsum.com'%></p>
         </div>
         <!-- END: CONTACT DETAILS -->
 

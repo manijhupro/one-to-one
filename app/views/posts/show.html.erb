@@ -34,7 +34,10 @@
 <%= render 'shared/error_messages' %>
     <p>
         <%= f.label :email, "Email:" %>
-        <%= f.text_field :email %><br/>
+        <%= f.text_field 'email', type:'email', class:'text-field form-control validate-field required', id:'form-email', data:{:'validation-type'=>'email'}, placeholder:'Email Address'%>
+
+        <!--%= f.text_field :email %>-->
+        <br/>
         <%= f.label :body, "New comment" %><br/>
         <%= f.text_area :body, :cols => "20", :rows => "5" %>
     </p>
