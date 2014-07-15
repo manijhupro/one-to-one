@@ -1,6 +1,9 @@
 OnetooneStatic::Application.routes.draw do
 
 
+  resources :contacts
+
+
   resources :posts do
     resources :comments, :only => [:create]
   end
