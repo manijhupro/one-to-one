@@ -2,12 +2,16 @@ class ContactsController < ApplicationController
   # GET /contacts
   # GET /contacts.json
   def index
+     if current_user.present?
     @contacts = Contact.all
 
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @contacts }
     end
+     else
+       flash[:notice] = "You must login."
+       end
   end
 
   # GET /contacts/1

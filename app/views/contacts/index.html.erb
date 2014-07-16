@@ -1,4 +1,6 @@
-<h1>Listing contacts</h1>
+<h1>Listing contacts</h1></br>
+<%= link_to button_to 'Back', root_path %>
+
 
 <table>
   <tr>
@@ -7,7 +9,9 @@
     <th>Title</th>
     <th>Body</th>
     <th>Phnumber</th>
-    <th></th>
+      <th>Date</th>
+
+      <th></th>
     <th></th>
     <th></th>
   </tr>
@@ -19,8 +23,13 @@
     <td><%= contact.title %></td>
     <td><%= contact.body %></td>
     <td><%= contact.phnumber %></td>
+      <td>
+
+          <%= Time.now.strftime("%Y-%h-%d %I:%M:%S %p") %>
+
+      </td>
     <td><%= link_to 'Show', contact %></td>
-    <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
+    <!--<td>%= link_to 'Edit', edit_contact_path(contact) %></td>-->
     <td><%= link_to 'Destroy', contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
@@ -28,4 +37,3 @@
 
 <br />
 
-<%= link_to 'Make another Booking', new_contact_path %>

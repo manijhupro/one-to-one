@@ -10,28 +10,34 @@
       </ul>
     </div>
   <% end %>
-
+    <div class="content-wrapper clearfix">
+    <div class="col-sm-7 col-md-3">
   <div class="field">
     <%= f.label :name %><br />
-    <%= f.text_field :name %>
+      <%= f.text_field 'name', class:'text-field form-control validate-field required', id:'form-name', data:{:'validation-type'=>'string'}, placeholder:'Full Name'%>
   </div>
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.text_field :email %>
+      <%= f.text_field 'email', type:'email', class:'text-field form-control validate-field required', id:'form-email', data:{:'validation-type'=>'email'}, placeholder:'Email Address'%>
   </div>
   <div class="field">
     <%= f.label :title %><br />
-    <%= f.text_field :title %>
+    <!--%= f.text_field :title %>-->
+      <%= f.text_field 'title', type:'title', class:'text-field form-control validate-field required', id:'title', data:{:'validation-type'=>'email'}, placeholder:'Title'%>
+
   </div>
+    <div class="field">
+        <%= f.label :phnumber %><br />
+        <%= f.text_field 'phnumber', type:'tel', class:'text-field form-control validate-field phone', id:'form-contact-number', data:{:'validation-type'=>'phone'}, placeholder:'Contact Number', :size=>15 %>
+    </div>
+        </div>
+        </div>
   <div class="field">
     <%= f.label :body %><br />
-    <%= f.text_area :body %>
+    <%= f.text_area :body, :size => "40x7" %>
   </div>
-  <div class="field">
-    <%= f.label :phnumber %><br />
-      <%= f.text_field 'phnumber', type:'tel', class:'text-field form-control validate-field phone', id:'form-contact-number', data:{:'validation-type'=>'phone'}, placeholder:'Contact Number'%>
-  </div>
+
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "make booking" %>
   </div>
 <% end %>

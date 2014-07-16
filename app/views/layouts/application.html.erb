@@ -11,7 +11,7 @@
 <body>
 <% if current_user.present? %>
 <nav>
-    <nav class="link-scroll pull-right">
+    <nav class=" navbar-fixed-top navbar-inverse">
         <div id="user_nav">
             <% if current_user %>
                 Logged in as <%= current_user.email %>.
@@ -23,9 +23,9 @@
         </div></nav>
     </nav>
 
-        <% flash.each do |name, msg| %>
-            <%= content_tag :div, msg, :id => "flash_#{name}" %>
-        <% end %>
+        <!--% flash.each do |name, msg| %>
+            %= content_tag :div, msg, :id => "flash_#{name}" %>
+        % end %>-->
     <% end %>
 
     <% flash.each do |key, value| %>

@@ -24,6 +24,7 @@
         <li id="menu-item-campaigns" class="menu-item scroll"><%=link_to 'Blog', '#campaigns' %></li>
         <li id="menu-item-support" class="menu-item scroll"><%=link_to 'support', '#support' %></li>
         <li id="menu-item-contact" class="menu-item scroll"><%=link_to 'Contact Us', '#contact' %></li>
+        <% if current_user.present? %><li id="menu-item-contact" class="menu-item scroll"><%=link_to 'E-mail', contacts_path %></li><% end %>
     </ul><!-- #main-menu -->
 
 </section><!-- #left-sidebar -->
@@ -108,37 +109,37 @@
                         <div class="content-to-populate-in-modal" id="modal-content-2">
                             <h1>Everest Base Camp Trek</h1>
 
-                            <p><%=image_tag('transp-image1.jpeg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image1.jpeg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image1.jpeg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image1.jpeg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'BOOK THIS', cont_path %>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
 
                             <h1>Annapurna Trek</h1>
 
-                            <p><%=image_tag('transp-image1.jpeg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image1.jpeg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image1.jpeg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image1.jpeg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'BOOK THIS', cont_path %>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
 
                             <h1>Langtang Trek</h1>
 
-                            <p><%=image_tag('transp-image1.jpeg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image1.jpeg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image1.jpeg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image1.jpeg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'BOOK THIS', cont_path %>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
 
                             <h1>Wild Kanchanjunga Trek</h1>
 
-                            <p><%=image_tag('transp-image1.jpeg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image1.jpeg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image1.jpeg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image1.jpeg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'BOOK THIS', cont_path %>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
 
                             <h1>Off Route Trek</h1>
 
-                            <p><%=image_tag('transp-image1.jpeg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image1.jpeg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image1.jpeg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image1.jpeg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'BOOK THIS', cont_path %>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
 
                             <h1>Ethnic/Home Stay Trek</h1>
 
-                            <p><%=image_tag('transp-image1.jpeg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image1.jpeg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image1.jpeg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image1.jpeg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'BOOK THIS', cont_path %>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
 
@@ -156,55 +157,55 @@
 
                         <div class="content-to-populate-in-modal" id="modal-content-3">
                             <h1>Bungy Nepal</h1>
-                            <p><%=image_tag('transp-image6.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image6.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image6.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image6.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'BOOK THIS', cont_path %>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                             <h1>Zip Flyer Nepal      </h1>
-                            <p><%=image_tag('transp-image6.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image6.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image6.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image6.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'BOOK THIS', cont_path %>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                             <h1>Paragliding Nepal</h1>
-                            <p><%=image_tag('transp-image6.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image6.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image6.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image6.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'BOOK THIS', cont_path %>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                             <h1>Ultralight Flight Nepal</h1>
-                            <p><%=image_tag('transp-image6.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image6.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image6.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image6.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'BOOK THIS', cont_path %>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                             <h1>Mountain Flight Nepal</h1>
-                            <p><%=image_tag('transp-image6.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image6.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image6.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image6.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'BOOK THIS', cont_path %>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                             <h1>Helicopter Tour Nepal</h1>
-                            <p><%=image_tag('transp-image6.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image6.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image6.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image6.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'BOOK THIS', cont_path %>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                             <h1>Connoying</h1>
-                            <p><%=image_tag('transp-image6.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image6.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image6.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image6.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'BOOK THIS', cont_path %>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                             <h1>Honey Hunter Tour</h1>
-                            <p><%=image_tag('transp-image6.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image6.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image6.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image6.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'BOOK THIS', cont_path %>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                             <h1>Rafting</h1>
-                            <p><%=image_tag('transp-image6.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image6.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image6.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image6.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'BOOK THIS', cont_path %>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                             <h1>Rock Climbing</h1>
-                            <p><%=image_tag('transp-image6.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image6.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image6.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image6.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'BOOK THIS', cont_path %>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                             <h1>Jungle Safari with Tower Stay</h1>
-                            <p><%=image_tag('transp-image6.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image6.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image6.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image6.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'BOOK THIS', cont_path %>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                             <h1>Mountaineering</h1>
-                            <p><%=image_tag('transp-image6.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image6.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image6.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image6.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'BOOK THIS', cont_path %>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                             <h1>Mountain Biking</h1>
-                            <p><%=image_tag('transp-image6.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image6.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image6.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image6.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'BOOK THIS', cont_path %>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                         </div><!-- #modal-content-3 -->
@@ -221,19 +222,19 @@
 
                         <div class="content-to-populate-in-modal" id="modal-content-4">
                             <h1>Pashupatinath Tour</h1>
-                            <p><%=image_tag('transp-image7.jpeg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image7.jpeg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image7.jpeg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image7.jpeg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'BOOK THIS', cont_path %>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                             <h1>Lumbini Tour</h1>
-                            <p><%=image_tag('transp-image7.jpeg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image7.jpeg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image7.jpeg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image7.jpeg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'BOOK THIS', cont_path %>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                             <h1>Muktinath Tour</h1>
-                            <p><%=image_tag('transp-image7.jpeg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image7.jpeg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image7.jpeg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image7.jpeg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'BOOK THIS', cont_path %>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                             <h1>City of Temples (Pashupatinath Bauddha, Swayambhunath)</h1>
-                            <p><%=image_tag('transp-image7.jpeg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image7.jpeg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image7.jpeg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image7.jpeg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'BOOK THIS', cont_path %>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                         </div><!-- #modal-content-4 -->
@@ -250,31 +251,31 @@
 
                         <div class="content-to-populate-in-modal" id="modal-content-5">
                             <h1>Kathmandu Valley</h1>
-                            <p><%=image_tag('transp-image4.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image4.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image4.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image4.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'BOOK THIS', cont_path %>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                             <h1>Lumbini Region</h1>
-                            <p><%=image_tag('transp-image4.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image4.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image4.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image4.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'BOOK THIS', cont_path %>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                             <h1>Pokhara Region</h1>
-                            <p><%=image_tag('transp-image4.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image4.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image4.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image4.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'BOOK THIS', cont_path %>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                             <h1>Chitwan Region</h1>
-                            <p><%=image_tag('transp-image4.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image4.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image4.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image4.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'BOOK THIS', cont_path %>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                             <h1>Bardiya Region</h1>
-                            <p><%=image_tag('transp-image4.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image4.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image4.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image4.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'BOOK THIS', cont_path %>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                             <h1>Illam and East Region</h1>
-                            <p><%=image_tag('transp-image4.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image4.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image4.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image4.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'BOOK THIS', cont_path %>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                             <h1>Daman </h1>
-                            <p><%=image_tag('transp-image4.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image4.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'Suspendisse molestie lorem odio', '#'%>, sit amet. </p>
+                            <p><%=image_tag('transp-image4.jpg', class:"lazy rounded_border hover_effect pull-left", data:{:'img-src'=> image_path('transp-image4.jpg')}, alt:"Lorem Ipsum") %>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <%=link_to 'BOOK THIS', cont_path %>, sit amet. </p>
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                         </div><!-- #modal-content-5 -->

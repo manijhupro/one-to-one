@@ -12,7 +12,7 @@ OnetooneStatic::Application.routes.draw do
 
   get "users/new"
 
-
+  match '/cont',   to: 'contacts#new'
 
 
   #has_many :posts
