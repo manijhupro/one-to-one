@@ -4,7 +4,7 @@
 
 
 <p id="notice"><%= notice %></p>
-
+<div class="col-sm-7 col-md-5.5">
 <p>
   <b>Title:</b>
   <%= @post.title %>
@@ -27,7 +27,7 @@
 <div id="comments">
     <%= render :partial => @post.comments %>
 </div>
-
+</div>
 <!--the form for submitting a comment-->
 
 <%= form_for [@post, Comment.new] do |f| %>
@@ -39,7 +39,7 @@
         <!--%= f.text_field :email %>-->
         <br/>
         <%= f.label :body, "New comment" %><br/>
-        <%= f.text_area :body, :cols => "20", :rows => "5" %>
+        <%= f.text_area :body, :cols => "25", :rows => "7" %>
     </p>
     <p><%= f.submit "Add comment" %></p></div>
 <% end %>
