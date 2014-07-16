@@ -31,7 +31,7 @@
 <!--the form for submitting a comment-->
 
 <%= form_for [@post, Comment.new] do |f| %>
-<%= render 'shared/error_messages' %>
+<%= render 'shared/error_messages' %><div class="col-sm-7 col-md-3">
     <p>
         <%= f.label :email, "Email:" %>
         <%= f.text_field 'email', type:'email', class:'text-field form-control validate-field required', id:'form-email', data:{:'validation-type'=>'email'}, placeholder:'Email Address'%>
@@ -41,5 +41,5 @@
         <%= f.label :body, "New comment" %><br/>
         <%= f.text_area :body, :cols => "20", :rows => "5" %>
     </p>
-    <p><%= f.submit "Add comment" %></p>
+    <p><%= f.submit "Add comment" %></p></div>
 <% end %>
