@@ -18,12 +18,12 @@
   </div>
   <div class="field">
     <%= f.label :email %><br />
-      <%= f.text_field 'email', type:'email', class:'text-field form-control validate-field required', id:'form-email', data:{:'validation-type'=>'email'}, placeholder:'Email Address'%>
+      <%= f.email_field :email, :required => true, :pattern => '[^@]+@[^@]+\.[a-zA-Z]{2,6}',  class:'text-field form-control validate-field required', :placeholder=>'Email address' %>
   </div>
   <div class="field">
     <%= f.label :title %><br />
     <!--%= f.text_field :title %>-->
-      <%= f.text_field 'title', type:'title', class:'text-field form-control validate-field required', id:'title', data:{:'validation-type'=>'email'}, placeholder:'Title'%>
+      <%= f.text_field 'title',:required =>true, type:'title', class:'text-field form-control validate-field required', id:'title', data:{:'validation-type'=>'email'}, placeholder:'Title'%>
 
   </div>
     <div class="field">

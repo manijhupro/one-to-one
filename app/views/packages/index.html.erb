@@ -1,0 +1,38 @@
+<h1>Listing Custom packages Inquiry</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Address</th>
+
+    <th>Stay</th>
+    <th>Budget</th>
+    <th>Places</th>
+    <th>Activities</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @packages.each do |package| %>
+  <tr>
+    <td><%= package.name %></td>
+    <td><%= package.email %></td>
+    <td><%= package.address %></td>
+
+    <td><%= package.stay %></td>
+    <td><%= package.budget %></td>
+    <td><%= package.places %></td>
+    <td><%= package.activities %></td>
+
+    <td><%= link_to 'Show', package %></td>
+
+    <td><%= link_to 'Destroy', package, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to button_to 'Back', root_path%>

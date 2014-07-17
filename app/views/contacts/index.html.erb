@@ -25,7 +25,8 @@
     <td><%= contact.phnumber %></td>
       <td>
 
-          <%= Time.now.strftime("%Y-%h-%d %I:%M:%S %p") %>
+          <!--%= Time.now.strftime("%Y-%h-%d %I:%M:%S %p") %>-->
+          <%= contact.created_at.strftime("%Y-%h-%d %I:%M:%S %p")%>
 
       </td>
     <td><%= link_to 'Show', contact %></td>

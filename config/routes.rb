@@ -1,6 +1,9 @@
 OnetooneStatic::Application.routes.draw do
 
 
+  resources :packages
+
+
   resources :contacts
 
 
@@ -13,6 +16,8 @@ OnetooneStatic::Application.routes.draw do
   get "users/new"
 
   match '/cont',   to: 'contacts#new'
+  match '/packagenew',   to: 'packages#new'
+
 
 
   #has_many :posts

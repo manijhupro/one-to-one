@@ -1,0 +1,66 @@
+<!--<h1>Custom Your Own Package</h1>-->
+
+<!--%= render 'form' %>-->
+<!--<div class="actions">-->
+
+<!--%= link_to button_to 'Cancel', root_path %>-->
+<!--</div>-->
+
+
+
+
+
+
+
+
+<article id="contact" class="section-wrapper clearfix" data-custom-background-img="<%= image_path('bg4.jpg')%>">
+    <div class="content-wrapper clearfix">
+
+
+        <!-- CONTACT DETAILS -->
+        <div class="contact-details col-sm-6 col-md-6">
+            <h1>Custom Your Own Package</h1>
+
+            <%= render 'form' %>
+            <div class="actions">
+
+            <%= link_to button_to 'Cancel', root_path %>
+            </div>
+        </div>
+        <!-- END: CONTACT DETAILS -->
+
+        <!-- CONTACT FORM -->
+        <div class="col-sm-7 col-md-6">
+
+            <%= form_for('', :html=>{:class => 'form-style validate-form clearfix', :role=>'form'}) do |f| %>
+
+                <!-- form left col -->
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <h1>hekk</h1>
+                     </div>
+                    <div class="form-group">
+                        <h1>hi</h1>
+                     </div>
+                    <div class="form-group">
+                     </div>
+                </div><!-- end: form left col -->
+
+                <!-- form right col -->
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <h1>testing</h1>
+                     </div>
+                    <div class="form-group">
+                        <%=image_tag('loader-form.GIF', class:"form-loader") %>
+                     </div>
+                    <div class="form-group form-general-error-container"></div>
+                </div><!-- end: form right col -->
+
+            <% end %>
+        </div><!-- end: CONTACT FORM -->
+
+    </div><!-- .content-wrapper -->
+</article><!-- .section-wrapper -->
+
+</section><!-- #main-content -->

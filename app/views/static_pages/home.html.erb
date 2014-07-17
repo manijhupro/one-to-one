@@ -24,7 +24,8 @@
         <li id="menu-item-campaigns" class="menu-item scroll"><%=link_to 'Blog', '#campaigns' %></li>
         <li id="menu-item-support" class="menu-item scroll"><%=link_to 'support', '#support' %></li>
         <li id="menu-item-contact" class="menu-item scroll"><%=link_to 'Contact Us', '#contact' %></li>
-        <% if current_user.present? %><li id="menu-item-contact" class="menu-item scroll"><%=link_to 'E-mail', contacts_path %></li><% end %>
+        <% if current_user.present? %><li id="menu-item-contact" class="menu-item scroll"><%=link_to 'Custom Package Inquiry', packages_path %>
+       <li id="menu-item-contact" class="menu-item scroll"><%=link_to 'E-mail', contacts_path %></li><% end %>
     </ul><!-- #main-menu -->
 
 </section><!-- #left-sidebar -->
@@ -37,11 +38,14 @@
 <article id="intro" class="section-wrapper clearfix">
 
     <div class="google-maps">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581931.843568942!2d83.44342169752825!3d28.75000465373178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995e8c77d2e68cf%3A0x34a29abcd0cc86de!2sNepal!5e0!3m2!1sen!2s!4v1404638479455" width="800" height="600" frameborder="0" style="border:0"></iframe>    </div>
+        <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581931.843568942!2d83.44342169752825!3d28.75000465373178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995e8c77d2e68cf%3A0x34a29abcd0cc86de!2sNepal!5e0!3m2!1sen!2s!4v1404638479455" width="800" height="600" frameborder="0" style="border:0"></iframe>   --> </div>
     <div class="content-wrapper clearfix">
         <div class="col-sm-10 col-md-9 pull-right">
 
           <section class="feature-text">
+              <%=link_to 'Make my own package', packagenew_path, class:'link-scroll btn btn-outline-inverse btn-lg' %>
+
+
                 <!--h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
                 <p>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet. </p>
                 -->

@@ -1,0 +1,56 @@
+<%= form_for(@package) do |f| %>
+  <% if @package.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@package.errors.count, "error") %> prohibited this package from being saved:</h2>
+
+      <ul>
+      <% @package.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+    <div class="field">
+      <h4>  <%= f.label :Personal_Details %><br /></h4>
+        </div>
+
+        <div class="field">
+    <%= f.label :name %><br />
+
+    <%= f.text_field :name, :required => true,  :placeholder=>'Full Name' %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email , :required => true, :pattern => '[^@]+@[^@]+\.[a-zA-Z]{2,6}',  :placeholder=>'email address' %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_field :address, :required=>true, :placeholder=>'Address' %>
+  </div>
+  <div class="field">
+    <h4><%= f.label :Details %><br /></h4>
+
+  </div>
+  <div class="field">
+    <%= f.label :stay %><br />
+    <%= f.text_field :stay, :required=>true, :placeholder=>'Days to stay' %>
+  </div>
+  <div class="field">
+    <%= f.label :budget %><br />
+    <%= f.text_field :budget, :required=>true, :placeholder=>'Estimated Budget' %>
+  </div>
+  <div class="field">
+    <%= f.label :places %><br />
+    <%= f.text_area :places,:size => "40x7", :required=>true, :placeholder=>'List The Places You Want To Visit' %>
+  </div>
+  <div class="field">
+    <%= f.label :activities %><br />
+    <%= f.text_area :activities,:size => "40x7", :required=>true, :placeholder=>'Details of your activities' %>
+  </div>
+  <div class="actions">
+    <%= f.submit  %>
+
+  </div>
+<% end %>
